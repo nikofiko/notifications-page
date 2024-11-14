@@ -1,0 +1,122 @@
+body{
+    font-family: "Plus Jakarta Sans", sans-serif;
+    width: 100%;
+}
+.counter{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+}
+.counter p{
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+a{
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+}
+.notification-page{
+    background-color: white;
+    padding: 0px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: space-between;
+    gap: 10px;
+    border-radius: 12px;
+}
+.main{
+    padding: 50px 375px;
+    background-color: hsl(210, 60%, 94%);
+}
+.notification{
+    padding: 15px 15px;
+    display: flex;
+    gap: 10px;
+    border-radius: 8px;
+}
+p{
+    margin: 0px;
+    margin-bottom: 3px;
+    color: hsl(219, 12%, 42%);
+}
+.time{
+    color: hsl(219, 14%, 63%);
+}
+.unread{
+    background-color: hsl(211, 68%, 97%);
+}
+img{
+    width: 45px;
+}
+b{
+    color: black;
+}
+.message{
+    border: 1px solid rgb(194, 192, 192);
+    padding: 15px;
+    margin-top: 10px;
+}
+.reaction{
+    color: rgb(96, 95, 95);
+}
+.chess{
+    color: hsl(219, 85%, 26%);
+    font-weight: 700;
+}
+.chess-positioning{
+    display: flex;
+}
+.positioning{
+    margin-right: 180px;
+}
+.unread::after{
+    content: " ";
+    width: 8px;
+    height: 8px;
+    background-color: hsl(1, 90%, 64%);
+    border-radius: 100%;
+    margin-top: 7px;
+}
+.quantity{
+    background-color: hsl(224, 80%, 22%);
+    color: white;
+    padding: 2px 15px;
+    border-radius: 12px;
+    margin-left: 5px;
+}
+@media (max-width: 376px){
+    .main{
+        padding:0px;
+    }
+    h1{
+        font-size: 20px;
+    }
+    .mark-read{
+        font-size: 12px;
+    }
+    .counter{
+        padding-top: 15px;
+    }
+    p{
+        font-size: 12px;
+        padding: 0px;
+        max-width: 240px;
+    }
+    .positioning{
+        margin-right: 0px;
+    }
+    .notification-page{
+        padding: 0px;
+    }
+    .counter{
+        width: 90%;
+        display: flex;
+    }
+    .notification{
+        padding-right: 0px;
+        width: 91%;
+    }
+}
